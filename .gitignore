@@ -1,0 +1,14 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.pdb
+
+## Database (local dev secrets)
+appsettings.Development.json
+
+## OS files
+.DS_Store
+Thumbs.db
