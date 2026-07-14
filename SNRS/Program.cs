@@ -23,7 +23,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "http://localhost:5174") // Vite / CRA dev servers
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "http://localhost:5174",
+                "https://somali-natural-resourcefrontend.vercel.app"
+              )
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
